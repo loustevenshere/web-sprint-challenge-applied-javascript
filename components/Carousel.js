@@ -22,3 +22,27 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function carousel() {
+  //Elements
+  const carousel = document.createElement('div');
+  const leftBtn = document.createElement('div');
+  const mountainImg = document.createElement('img');
+  const computerImg = document.createElement('img');
+  const treeImg = document.createElement('img');
+  const turnTableImg = document.createElement('img');
+  const rightBtn = document.createElement('div');
+
+  //Hierarchy
+  carousel.appendChild(leftBtn);
+  carousel.appendChild(mountainImg);
+  carousel.appendChild(computerImg);
+  carousel.appendChild(treeImg);
+  carousel.appendChild(turnTableImg);
+  carousel.appendChild(rightBtn);
+
+  //Class list
+  carousel.classList.add('carousel');
+  leftBtn.classList.add('left-button');
+  rightBtn.classList.add('right-button');
+}

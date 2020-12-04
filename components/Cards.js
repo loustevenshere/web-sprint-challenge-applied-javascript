@@ -39,6 +39,7 @@ axios
     //     }
 
     //**Ask why code below creates an extra unwanted card
+
     // const values = Object.values(res.data.articles);
     // console.log(values);
     // for(var i = 0; i < values.length; i++) {
@@ -78,7 +79,7 @@ function cardMaker({headline, authorPhoto, authorName}) {
     authorContainer.classList.add('author');
     imgContainer.classList.add('img-container')
 
-    //Content => look at data first
+    //Content 
     headLine.innerHTML = headline;
     img.src = authorPhoto;
     theAuthorName.textContent = `By: ${authorName}`;
